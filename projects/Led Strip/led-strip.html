@@ -57,13 +57,11 @@
             <p>LED strip music visualization using Python and the ESP8266 module.</p>
 
             <div style="margin-left: auto;margin-right: auto;display: block;text-align: center;    ">
-              <img class="img-fluid" src="Demo.gif" alt="Thumb-1" >
+              <img class="img-fluid" src="Demo.gif" alt="Thumb-1">
             </div>
 
             <div class="image-container" id="lightgallery" style="text-align: center;">
-
               <br>
-
               <div data-src="block-diagram.png"
                 data-sub-html="<h4>Flow Diagram</h4><p>Flow diagram detailing the working of the OCR</p>"
                 data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
@@ -72,6 +70,7 @@
                 </a>
               </div>
             </div>
+
             <h2 id="summary">Overview</h1>
               <p>The guide includes everything needed to build an LED strip music visualizer (excluding hardware):
               </p>
@@ -97,9 +96,6 @@
                 </li>
               </ul>
 
-              <!-- <div markdown="0" style="text-align: center;">
-                      <a href="https://github.com/carnife-x/Cloud-OCR-Reader" class="btn"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Github" style="height: 50px; width: 50px;"></a>
-                      </div> -->
 
               <h2 id="computer-esp8266">Computer + ESP8266</h2>
               <p>To build a visualizer using a computer and ESP8266, you will need: - Computer with Python 2.7 or 3.5
@@ -117,10 +113,11 @@
                 (for recording audio with microphone)</p>
               <p>On Windows machines, the use of <a href="https://www.anaconda.com/distribution/">Anaconda</a> is
                 <strong>highly recommended</strong>. Anaconda simplifies the installation of Python dependencies, which
-                is sometimes difficult on Windows.</p>
+                is sometimes difficult on Windows.
+              </p>
               <h2 id="installing-python-dependencies">Installing python dependencies</h2>
               <p>The pip package manager can also be used to install the python dependencies.</p>
-              <pre data-src="prism.js" class="language-bash" data-src-status="loaded" tabindex="0" >
+              <pre data-src="prism.js" class="language-bash" data-src-status="loaded" tabindex="0">
                 <code class="language-bash" class=" language-bash">                
 pip install numpy
 pip install scipy
@@ -129,7 +126,8 @@ pip install pipwin
 pipwin install pyaudio
                 </code>
               </pre>
-              <p>If <code class="language-bash">pip</code> is not found try using <code class="language-bash">python -m pip install</code> instead.</p>
+              <p>If <code class="language-bash">pip</code> is not found try using <code
+                  class="language-bash">python -m pip install</code> instead.</p>
               <p>Running the visualization can be done using the command below.</p>
               <p><code class="language-bash">python3 visualization.py /tmp</code></p>
               <h2 id="arduino-dependencies">Arduino dependencies</h2>
@@ -159,7 +157,7 @@ pipwin install pyaudio
                   alt="nodemcu-pinout" />
                 <p class="caption">nodemcu-pinout</p>
               </div>
-              
+
               <h2 id="setup-and-configuration">Setup and Configuration</h2>
               <ol style="list-style-type: decimal">
                 <li>Install Python and Python dependencies</li>
@@ -176,22 +174,27 @@ pipwin install pyaudio
                 <li>Set <code class="language-bash">const char* ssid</code> to your router's SSID</li>
                 <li>Set <code class="language-bash">const char* password</code> to your router's password</li>
                 <li>Set <code class="language-bash">IPAddress gateway</code> to match your router's gateway</li>
-                <li>Set <code class="language-bash">IPAddress ip</code> to the IP address that you would like your ESP8266 to use (your
+                <li>Set <code class="language-bash">IPAddress ip</code> to the IP address that you would like your
+                  ESP8266 to use (your
                   choice)</li>
                 <li>Set <code class="language-bash">#define NUM_LEDS</code> to the number of LEDs in your LED strip</li>
               </ul>
               <ol start="6" style="list-style-type: decimal">
                 <li>Upload the <a href="arduino/ws2812_controller/ws2812_controller.ino">ws2812_controller.ino</a>
                   firmware to the ESP8266. Ensure that you have selected the correct ESP8266 board from the boards menu.
-                  In the dropdown menu, set <code class="language-bash">CPU Frequency</code> to 160 MHz for optimal performance.</li>
+                  In the dropdown menu, set <code class="language-bash">CPU Frequency</code> to 160 MHz for optimal
+                  performance.</li>
                 <li>In <a href="python/config.py">config.py</a>:</li>
               </ol>
               <ul>
-                <li>Set <code class="language-bash">N_PIXELS</code> to the number of LEDs in your LED strip (must match <code class="language-bash">NUM_LEDS</code>
+                <li>Set <code class="language-bash">N_PIXELS</code> to the number of LEDs in your LED strip (must match
+                  <code class="language-bash">NUM_LEDS</code>
                   in <a href="arduino/ws2812_controller/ws2812_controller.ino">ws2812_controller.ino</a>)</li>
-                <li>Set <code class="language-bash">UDP_IP</code> to the IP address of your ESP8266 (must match <code class="language-bash">ip</code> in <a
+                <li>Set <code class="language-bash">UDP_IP</code> to the IP address of your ESP8266 (must match <code
+                    class="language-bash">ip</code> in <a
                     href="arduino/ws2812_controller/ws2812_controller.ino">ws2812_controller.ino</a>)</li>
-                <li>If needed, set <code class="language-bash">MIC_RATE</code> to your microphone sampling rate in Hz. Most of the time you
+                <li>If needed, set <code class="language-bash">MIC_RATE</code> to your microphone sampling rate in Hz.
+                  Most of the time you
                   will not need to change this.</li>
               </ul>
           </div>
