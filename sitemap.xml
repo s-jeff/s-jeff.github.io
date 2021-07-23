@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://steve-jefferson.com/</loc>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://steve-jefferson.com/index.html</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://steve-jefferson.com/projects/Drone/drone.html</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://steve-jefferson.com/projects/Led%20Strip/led-strip.html</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://steve-jefferson.com/projects/Intruder%20Detection/intruder-detection.html</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://steve-jefferson.com/projects/Cloud%20OCR/cloud-ocr.html</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://steve-jefferson.com/projects/SoundCloud%20Downloader/soundcloud-downloader.html</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://steve-jefferson.com/blogs/Azure%20Vision/Azure%20Vision.html</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://steve-jefferson.com/blogs/Zappa%20Deployment/serverless-django-deployment.html</loc>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
