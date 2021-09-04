@@ -604,7 +604,7 @@ section {
   justify-content: center;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a {
+.portfolio .portfolio-wrap .portfolio-links p {
   color: #fff;
   font-size: 30px;
   text-align: center;
@@ -613,11 +613,11 @@ section {
   width: 50%;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a:hover {
+.portfolio .portfolio-wrap .portfolio-links p:hover {
   background: rgba(20, 157, 221, 0.95);
 }
 
-.portfolio .portfolio-wrap .portfolio-links a + a {
+.portfolio .portfolio-wrap .portfolio-links p+p{
   border-left: 1px solid #37b3ed;
 }
 
