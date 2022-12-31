@@ -308,9 +308,12 @@ const portfolioLightbox = GLightbox({
 
 var onloadCallback = function() {
   grecaptcha.render('captcha_element', {
-    'sitekey' : '6Lc-Lb8jAAAAADNDLml7tQQ90haod5jKNmbuZKVe'
+    'sitekey' : '6Lc-Lb8jAAAAADNDLml7tQQ90haod5jKNmbuZKVe',
+    'callback' : correctCaptcha
   });
 };
 
-
+var correctCaptcha = function(response) {
+  alert(response);
+};
 
