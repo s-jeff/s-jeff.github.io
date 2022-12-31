@@ -1293,6 +1293,15 @@ section {
   }
 }
 
+.blinking {
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  10% {
+    opacity: 0.5;
+  }
+}
+
 /* Custom Font */
 @font-face {
   font-family: 'good_timingbold';
@@ -1304,5 +1313,6 @@ section {
 }
 .hackfont{
   font-family: 'good_timingbold';        
+  text-align: center;
   }
 
