@@ -306,7 +306,11 @@ const portfolioLightbox = GLightbox({
 // more portfolio links
 
 
-
+var onloadCallback = function() {
+  grecaptcha.render('captcha_element', {
+    'sitekey' : '6Lc-Lb8jAAAAADNDLml7tQQ90haod5jKNmbuZKVe'
+  });
+};
 
 
 

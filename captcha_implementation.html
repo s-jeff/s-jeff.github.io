@@ -3,7 +3,7 @@
     <title>reCAPTCHA demo: Explicit render after an onload callback</title>
     <script type="text/javascript">
       var onloadCallback = function() {
-        grecaptcha.render('html_element', {
+        grecaptcha.render('captcha_element', {
           'sitekey' : '6Lc-Lb8jAAAAADNDLml7tQQ90haod5jKNmbuZKVe'
         });
       };
@@ -11,7 +11,7 @@
   </head>
   <body>
     <form action="?" method="POST">
-      <div id="html_element"></div>
+      <div id="captcha_element"></div>
       <br>
       <input type="submit" value="Submit">
     </form>
