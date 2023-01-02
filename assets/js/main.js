@@ -314,6 +314,7 @@ var onloadCallback = function() {
 };
 
 var correctCaptcha = function(response) {
-  alert(response);
+  var x = document.getElementById("gcapsucess");
+  x.style.display = "block";
 };
 
