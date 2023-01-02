@@ -314,7 +314,10 @@ var onloadCallback = function() {
 };
 
 var correctCaptcha = function(response) {
-  var x = document.getElementById("gcapsucess");
-  x.style.display = "block";
+  var x = document.getElementById("gcapsucess");  
+  var cap = document.getElementById("captcha_element");
+  x.style.display = "inline";
+  cap.style.display = "none";
+
 };
 
